@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 *{margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -28,14 +28,14 @@
 .navbar{
     color:#fff;
     background-color: var(--main-color);
-    padding: 2rem 0;
+    padding: 1.3rem 0;
     font-weight: 300;
 }
 .navbar-brand{
     transition: all linear;
     animation: beat 1s infinite alternate ;
     color:#fff ;
-    font-weight: 300;
+  
 }
 @keyframes beat{
     to{
@@ -52,6 +52,7 @@
 }
 .navbar-toggler{
     background-color: white;
+    padding: 0.001rem ;
 }
 .fa-snowflake{
     transition: all linear;
@@ -67,7 +68,7 @@
     }
 }
 /* main header  */
-.main_header_left{
+ .main_header_left{
     height: 70rem;
     display: flex;
     justify-content: center;
@@ -106,8 +107,8 @@ color: var(--main-color);
     box-shadow: 0 8px 6px -6px #0097e6;
 }
 /* weather */
-.temp_form {
-    width:60%;
+ .temp_form {
+    width:30%;
     position: relative;
     margin: 5rem auto;
 }
@@ -147,7 +148,7 @@ color: var(--main-color);
 }
 .tempInformation{
     height: 30rem;
-    width: 40rem;
+    width: 50rem;
     margin: auto;
     min-height: 10rem;
     background-color: rgb(124, 251, 255);
@@ -213,7 +214,7 @@ p{
     transition: all 0.3s linear;
 }
 /* footer */
-footer{
+ footer{
     width: 100%;
     background-color: var(--main-color);
     margin-top: auto;
@@ -227,7 +228,7 @@ footer p{
 }
 /* responsive */
 
-.main_header_left{
+ .main_header_left{
     height: auto;
     margin: 5rem 0;
 }
@@ -239,10 +240,15 @@ footer p{
     filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0.3)
     );
 }
+ .temp_form{
+     width: auto;
+ }
+ .tempInformation{
+     width: auto;
+ }
 
 
 
 
-
-
-
+ 
+ 
