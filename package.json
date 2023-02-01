@@ -1,4 +1,4 @@
-{
+{"homepage": "http://pragya14gupta.github.io/weatherapp",
   "name": "weatherapp",
   "version": "1.0.0",
   "description": "",
@@ -9,10 +9,14 @@
     "nodemon": "^2.0.12",
     "path": "^0.12.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "author": "pragya",
