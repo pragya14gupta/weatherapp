@@ -12,7 +12,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "author": "pragya",
   "license": "ISC"
