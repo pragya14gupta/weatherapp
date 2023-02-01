@@ -17,6 +17,7 @@
     "start": "node src/app.js",
     "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   "author": "pragya",
